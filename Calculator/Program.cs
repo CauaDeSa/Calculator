@@ -1,12 +1,14 @@
-﻿int number;
+﻿float n1, n2;
 
-do
-{
-    Console.Write("Type a number: ");
-    number = int.Parse(Console.ReadLine());
-} while (number < 0);
+Console.Write("Type number 1: ");
+n1 = int.Parse(Console.ReadLine());
 
-for (int i = 0; i < 11; i++)
-    Console.WriteLine($"{number} X {i} = {i * number}");
+Console.Write("Type number 2: ");
+n2 = int.Parse(Console.ReadLine());
+
+Console.WriteLine($"Summed: {n1 + n2}");
+Console.WriteLine($"Subtracted: {n1 - n2}");
+Console.WriteLine($"Multiplied: {n1 * n2}");
+Console.WriteLine($"Divided: {n1 / n2}");
 
 Console.ReadKey();
